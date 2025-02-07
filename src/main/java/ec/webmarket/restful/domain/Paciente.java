@@ -25,15 +25,16 @@ public class Paciente {
 
     @Column(updatable= false)
     private String apellido;
+    
+     @Column(updatable= false, unique= true)
+    private String telefono;
+     
+     @Column(updatable= false, unique = true)
+      private String email;
+
 
     @Column(updatable= false, unique= true)
     private String fechaNacimiento;
-
-    @Column(updatable= false, unique= true)
-    private String telefono;
-
-    @Column(updatable= false, unique = true)
-    private String email;
 
     @Column(updatable= false)
     private String direccion;
